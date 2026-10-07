@@ -1,0 +1,21 @@
+#listaInscricoes {
+    width: 100%;
+    margin: 25px auto;
+}
+
+.resumo {
+    margin-top: 25px;
+}
+
+.resumo h3 {
+    margin-bottom: 15px;
+}
+
+.resumo p {
+    margin: 10px 0;
+}
+
+#listaInscricoes .aviso {
+    text-align: center;
+    padding: 25px;
+}

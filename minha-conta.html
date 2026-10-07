@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha conta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SECITEC 2026</h1>
+        <button id="menuBotao">☰ Menu</button>
+
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#Oficinas">Oficinas</a>
+            <a href="inscricoes.html">Minhas inscrições</a>
+            <a href="minha-conta.html">Minha Conta</a>
+        </nav>
+
+        <button id="temaBotao">Tema claro/escuro</button>
+    </header>
+
+    <section class="formulario">
+        <h3>Area do participante</h3>
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo">
+        <span id="validacaoNome" class="validacao"></span>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail">
+        <span id="validacaoEmail" class="validacao"></span>
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" placeholder="Digite sua idade">
+
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" placeholder="Digite sua cidade">
+
+        <label for="senha">Senha</label>
+        <div class="senha-box">
+            <input type="password" id="senha" placeholder="Digite sua senha">
+            <button id="mostrarSenha" type="button">Mostrar</button>
+        </div>
+
+        <button id="salvar" type="button">Salvar</button>
+
+        <p id="mensagem">Dados atualizados com sucesso!</p>
+    </section>
+
+<section id="Oficinas"></section>
+
+    <p id="mensagem"></p>
+
+<section id="perfil" class="perfil">
+        <h3>Meu perfil</h3>
+        <img id="avatarPrincipal" class="avatar-principal" src="img/nathan.jpg" alt="Imagem de perfil">
+
+        <div class="avatares">
+            <img src="img/nathan.jpg" alt="Avatar 1">
+            <img src="img/emanuel.jpg" alt="Avatar 2">
+            <img src="img/guilherme.jpg" alt="Avatar 3">
+            <img src="img/arthur N.jpg" alt="Avatar 4">
+        </div>
+
+        <hr style="margin: 20px 0;">
+
+        <p><strong>Nome:</strong> <span id="perfilNome"></span></p>
+        <p><strong>E-mail:</strong> <span id="perfilEmail"></span></p>
+        <p><strong>Idade:</strong> <span id="perfilIdade"></span></p>
+        <p><strong>Cidade:</strong> <span id="perfilCidade"></span></p>
+    </section>
+</main>
+
+<footer>
+    <p>SECITEC 2026</p>
+</footer>
+
+<script src="minha-conta.js"></script>
+</body>
+</html>

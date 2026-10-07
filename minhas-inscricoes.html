@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas inscrições - SECITEC 2026</title>
+    <link rel="stylesheet" href="minhas-inscricoes.css">
+</head>
+
+<body>
+    <header>
+        <h1>SECITEC 2026</h1>
+        <button id="menuBotao">☰ Menu</button>
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#Oficinas">Oficinas</a>
+            <a href="inscricoes.html">Minhas inscrições</a>
+            <a href="minha-conta.html">Minha Conta</a>
+        </nav>
+        <button id="temaBotao">Tema claro/escuro</button>
+    </header>
+
+    <main class="container">
+        <h2>Minhas inscrições</h2>
+        <section id="listaInscricoes"></section>
+        <section class="resumo">
+            <h3>Resumo da inscrição</h3>
+            <p>
+                Quantidade de oficinas:
+                <strong id="quantidade">0</strong>
+            </p>
+            <p class="total">
+                Total: R$ <span id="valorTotal">0.00</span>
+            </p>
+        </section>
+
+        <div class="controles">
+            <button onclick="window.location.href='index.html#Oficinas'">
+                Escolher mais oficinas
+            </button>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <h3>Remover oficina</h3>
+            <p>
+                Deseja realmente remover esta oficina da sua inscrição?
+            </p>
+            <div class="modal-acoes">
+                <button id="cancelar" class="cancelar">
+                    Cancelar
+                </button>
+                <button id="confirmar">
+                    Confirmar remoção
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SECITEC 2026</p>
+    </footer>
+
+    <script src="minhas-inscricoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficinas SECITEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SECITEC 2026</h1>
+    <button id="menuBotao">☰ Menu</button>
+
+        <nav id="menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#Oficinas">Oficinas</a>
+            <a href="inscricoes.html">Minhas inscrições</a>
+            <a href="minha-conta.html">Minha Conta</a>
+        </nav>
+
+        <button id="temaBotao">Tema claro/escuro</button>
+</header>
+
+<section class="imagems">
+    <div class="imagem">
+        <img id="imagemSlider" src="" alt="SECITEC">
+    </div>
+    <div class="controles">
+        <button id="anterior">Anterior</button>
+        <button id="proximo">Próximo</button>
+    </div>
+</section>
+    <h2>SECITEC 2026</h2>
+    <section class="filtros">
+        <input 
+        type="text" 
+        id="busca" 
+        placeholder="Buscar oficinas...">
+    <select  id="ordenacao">
+        <option value="selecione">Selecione</option>
+        <option value="menor">Menor Preço</option>
+        <option value="maior">Maior Preço</option>
+    </select>
+</section>
+
+    <section id="Oficinas"></section>
+    <p id="mensagem"></p>     
+<footer>
+    <p>SECITEC 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

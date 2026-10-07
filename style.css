@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+#menuBotao {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#temaBotao {
+    margin-left: auto;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 180px;
+}
+
+#menu a:hover {
+    opacity: 0.85;
+}
+
+.topo {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.topo h1 {
+    font-size: 32px;
+}
+
+#menuBotao,
+#temaBotao {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#menuBotao:hover,
+#temaBotao:hover {
+    opacity: 0.85;
+}
+
+#menu {
+    max-width: 1200px;
+    margin: 15px auto 0;
+    display: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    background: #333;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+#menu a:hover {
+    opacity: 0.85;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 28px;
+}
+
+.imagens {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.imagem {
+    width: 100%;
+    height: 350px;
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.controles button,
+.card button,
+.formulario button,
+.modal button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filtros {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#busca,
+#ordenacao,
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#busca {
+    width: 60%;
+}
+
+#ordenacao {
+    width: 200px;
+}
+
+#Oficinas {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 270px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.card p {
+    margin: 8px 15px;
+    color: #555;
+}
+
+.card button {
+    width: calc(100% - 30px);
+    margin: 15px;
+}
+
+#mensagem,
+.aviso {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 50px;
+}
+
+.formulario,
+.perfil,
+.resumo,
+.inscricao-card {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.validacao {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.valido {
+    color: green;
+}
+
+.invalido {
+    color: #c00;
+}
+
+.senha-box {
+    display: flex;
+    gap: 8px;
+}
+
+.senha-box input {
+    flex: 1;
+}
+
+.senha-box button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mensagemTemporaria {
+    display: none;
+    background: #d8f5d0;
+    color: #176b16;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.perfil {
+    display: none;
+}
+
+.avatar-principal {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.avatares {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.avatares img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.avatares img:hover {
+    border-color: #222;
+}
+
+.inscricao-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inscricao-card img {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inscricao-info {
+    flex: 1;
+}
+
+.btn-remover {
+    background: #a00 !important;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.aberto {
+    display: flex;
+}
+
+.modal-conteudo {
+    background: white;
+    max-width: 450px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.modal-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal .cancelar {
+    background: #777;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+body.escuro {
+    background-color: #181818;
+    color: #eee;
+}
+
+body.escuro .card,
+body.escuro .formulario,
+body.escuro .perfil,
+body.escuro .resumo,
+body.escuro .inscricao-card,
+body.escuro .modal-conteudo {
+    background-color: #292929;
+    color: #eee;
+}
+
+body.escuro .card p {
+    color: #ccc;
+}
+
+body.escuro input,
+body.escuro select {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.escuro .imagem {
+    background-color: #333;
+}
+
+@media (max-width: 700px) {
+
+    .topo {
+        flex-wrap: wrap;
+    }
+
+    .imagem {
+        height: 220px;
+    }
+
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #busca,
+    #ordenacao {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .inscricao-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .inscricao-card img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .formulario,
+    .perfil {
+        width: 95%;
+    }
+
+}
